@@ -39,9 +39,18 @@
     id="fileid" 
     style="display: none; position: absolute; top: 10%; left: 20%; width: 60%; height: 70%; border: none; box-shadow: 0 0 15px rgba(0,0,0,0.5); border-radius: 10px; z-index: 999;">
   </iframe>
-    
-      <script src="terminal.js"></script>
+ 
+  
+      <iframe 
+    src="../code/index.php" 
+    id="codeid" 
+    scrolling="no"
+    style="display: none; position: absolute; top: 5%; left: 5%; width: 95%; height: 80%; border: none; box-shadow: 0 0 15px rgba(0,0,0,0.5); border-radius: 10px; z-index: 999;">
+  </iframe>
 
+      <script src="terminal.js"></script>
+      <script src="code.js"></script>
+      
 
 
       <!-- Taskbar -->
@@ -53,7 +62,7 @@
         <div class="pinned-icons">
           <div class="pinned-icon" onclick="openfile()">📁</div>
           <div class="pinned-icon">🌐</div>
-          <div class="pinned-icon">🖥️</div>
+          <div class="pinned-icon" onclick="opencode()">🖥️</div>
         </div>
         <div class="system-tray">
           <span>🔔</span>
